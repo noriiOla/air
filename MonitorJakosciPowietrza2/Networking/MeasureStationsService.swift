@@ -15,7 +15,6 @@ class MeasureStationsService {
             return
         }
         
-//        print("Alamofire")
         Alamofire.request(url, method: HTTPMethod.get, parameters: nil, encoding: URLEncoding.default , headers: nil)
             .validate()
             .responseJSON { response in
@@ -40,24 +39,4 @@ class MeasureStationsService {
         }
         
     }
-//    func sendRequest(url: String, method: HTTPMethod, completionHandler: @escaping (Any?, String?) -> ()) {
-//        Alamofire.request(url, method: method, parameters: nil, encoding: URLEncoding.default , headers: nil)
-//            .validate()
-//            .responseJSON { response in
-//                switch response.result {
-//                case .success:
-//                    if let data = response.data, let _ = String(data: data, encoding: .utf8) {
-//                        if let json = try? JSONSerialization.jsonObject(with: data) {
-//                            completionHandler(json, nil)
-//                        }else{
-//                            completionHandler(nil, "Serialization error")
-//                        }
-//                    }else{
-//                        completionHandler(nil, "Encoding error")
-//                    }
-//                case .failure(let error):
-//                    completionHandler(nil, error.localizedDescription)
-//                }
-//        }
-//    }
 }
