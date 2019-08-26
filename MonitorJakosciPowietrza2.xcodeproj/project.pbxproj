@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BAE34EE93419A2EF5D7E93C /* Pods_MonitorJakosciPowietrza2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81D77B556C786BF6B3BBE507 /* Pods_MonitorJakosciPowietrza2UITests.framework */; };
+		6F0626AA2312C5FF00BAF543 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0626A92312C5FF00BAF543 /* StringExtensions.swift */; };
+		6F7EEFA0230DBEA00041A320 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEF9F230DBEA00041A320 /* AppDelegate.swift */; };
+		6F7EEFA2230DBEA00041A320 /* MeasureStationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFA1230DBEA00041A320 /* MeasureStationsViewController.swift */; };
+		6F7EEFA7230DBEA50041A320 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7EEFA6230DBEA50041A320 /* Assets.xcassets */; };
+		6F7EEFAA230DBEA50041A320 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7EEFA8230DBEA50041A320 /* LaunchScreen.storyboard */; };
+		6F7EEFB5230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFB4230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.swift */; };
+		6F7EEFC0230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFBF230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.swift */; };
+		6F7EEFD4230DC4EC0041A320 /* MeasureStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFD3230DC4EC0041A320 /* MeasureStationViewModel.swift */; };
+		6F7EEFD7230DC5370041A320 /* MeasureStationsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7EEFD6230DC5370041A320 /* MeasureStationsView.storyboard */; };
+		6F7EEFDA230DC6640041A320 /* MeasureStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFD8230DC6640041A320 /* MeasureStationTableViewCell.swift */; };
+		6F7EEFDB230DC6640041A320 /* MeasureStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F7EEFD9230DC6640041A320 /* MeasureStationTableViewCell.xib */; };
+		6F7EEFDD230DC7570041A320 /* MeasureStationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFDC230DC7570041A320 /* MeasureStationsService.swift */; };
+		6F7EEFDF230DC8F60041A320 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFDE230DC8F60041A320 /* Urls.swift */; };
+		6F7EEFE1230DCD2C0041A320 /* MeasuringStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFE0230DCD2C0041A320 /* MeasuringStation.swift */; };
+		6F7EEFE3230DCD4A0041A320 /* MeasuringStand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFE2230DCD4A0041A320 /* MeasuringStand.swift */; };
+		6F7EEFE5230DCD610041A320 /* MeasuringData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFE4230DCD610041A320 /* MeasuringData.swift */; };
+		6F7EEFE7230DCD840041A320 /* AirQualityIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFE6230DCD840041A320 /* AirQualityIndex.swift */; };
+		6F7EEFE9230DCDB00041A320 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFE8230DCDB00041A320 /* City.swift */; };
+		6F7EEFEB230DCDC60041A320 /* Comune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFEA230DCDC60041A320 /* Comune.swift */; };
+		6F7EEFED230DCDDF0041A320 /* MeasuringStandParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFEC230DCDDF0041A320 /* MeasuringStandParam.swift */; };
+		6F7EEFEF230DCE040041A320 /* MeasuringDataValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFEE230DCE040041A320 /* MeasuringDataValue.swift */; };
+		6F7EEFF1230DCE200041A320 /* IndexLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7EEFF0230DCE200041A320 /* IndexLevel.swift */; };
+		6FD2CFEB231481FB00F7BDB9 /* MeasureStationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FD2CFEA231481FB00F7BDB9 /* MeasureStationHeader.xib */; };
+		6FD2CFED2314833E00F7BDB9 /* MeasureStationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD2CFEC2314833E00F7BDB9 /* MeasureStationHeader.swift */; };
+		CB565E1ECB659D291C532252 /* Pods_MonitorJakosciPowietrza2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A382F8DEFAA53A8FC7B6873A /* Pods_MonitorJakosciPowietrza2.framework */; };
+		F85360693AD218B51EB77BC2 /* Pods_MonitorJakosciPowietrza2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5359818063133AB6198E2A3B /* Pods_MonitorJakosciPowietrza2Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F7EEFB1230DBEA60041A320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7EEF94230DBEA00041A320 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F7EEF9B230DBEA00041A320;
+			remoteInfo = MonitorJakosciPowietrza2;
+		};
+		6F7EEFBC230DBEA60041A320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F7EEF94230DBEA00041A320 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F7EEF9B230DBEA00041A320;
+			remoteInfo = MonitorJakosciPowietrza2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0632542FCF9E19E0F109FC40 /* Pods-MonitorJakosciPowietrza2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorJakosciPowietrza2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorJakosciPowietrza2Tests/Pods-MonitorJakosciPowietrza2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5359818063133AB6198E2A3B /* Pods_MonitorJakosciPowietrza2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorJakosciPowietrza2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E6FA06C29EE3C1E3681695E /* Pods-MonitorJakosciPowietrza2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorJakosciPowietrza2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorJakosciPowietrza2/Pods-MonitorJakosciPowietrza2.debug.xcconfig"; sourceTree = "<group>"; };
+		6F0626A92312C5FF00BAF543 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		6F7EEF9C230DBEA00041A320 /* MonitorJakosciPowietrza2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorJakosciPowietrza2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7EEF9F230DBEA00041A320 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F7EEFA1230DBEA00041A320 /* MeasureStationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureStationsViewController.swift; sourceTree = "<group>"; };
+		6F7EEFA6230DBEA50041A320 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F7EEFA9230DBEA50041A320 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F7EEFAB230DBEA50041A320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F7EEFB0230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonitorJakosciPowietrza2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7EEFB4230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorJakosciPowietrza2Tests.swift; sourceTree = "<group>"; };
+		6F7EEFB6230DBEA60041A320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F7EEFBB230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonitorJakosciPowietrza2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F7EEFBF230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorJakosciPowietrza2UITests.swift; sourceTree = "<group>"; };
+		6F7EEFC1230DBEA60041A320 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F7EEFD3230DC4EC0041A320 /* MeasureStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureStationViewModel.swift; sourceTree = "<group>"; };
+		6F7EEFD6230DC5370041A320 /* MeasureStationsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeasureStationsView.storyboard; sourceTree = "<group>"; };
+		6F7EEFD8230DC6640041A320 /* MeasureStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureStationTableViewCell.swift; sourceTree = "<group>"; };
+		6F7EEFD9230DC6640041A320 /* MeasureStationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasureStationTableViewCell.xib; sourceTree = "<group>"; };
+		6F7EEFDC230DC7570041A320 /* MeasureStationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureStationsService.swift; sourceTree = "<group>"; };
+		6F7EEFDE230DC8F60041A320 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		6F7EEFE0230DCD2C0041A320 /* MeasuringStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringStation.swift; sourceTree = "<group>"; };
+		6F7EEFE2230DCD4A0041A320 /* MeasuringStand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringStand.swift; sourceTree = "<group>"; };
+		6F7EEFE4230DCD610041A320 /* MeasuringData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringData.swift; sourceTree = "<group>"; };
+		6F7EEFE6230DCD840041A320 /* AirQualityIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirQualityIndex.swift; sourceTree = "<group>"; };
+		6F7EEFE8230DCDB00041A320 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		6F7EEFEA230DCDC60041A320 /* Comune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comune.swift; sourceTree = "<group>"; };
+		6F7EEFEC230DCDDF0041A320 /* MeasuringStandParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringStandParam.swift; sourceTree = "<group>"; };
+		6F7EEFEE230DCE040041A320 /* MeasuringDataValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasuringDataValue.swift; sourceTree = "<group>"; };
+		6F7EEFF0230DCE200041A320 /* IndexLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexLevel.swift; sourceTree = "<group>"; };
+		6FD2CFEA231481FB00F7BDB9 /* MeasureStationHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeasureStationHeader.xib; sourceTree = "<group>"; };
+		6FD2CFEC2314833E00F7BDB9 /* MeasureStationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureStationHeader.swift; sourceTree = "<group>"; };
+		7BF4E8327AF2218673AD060E /* Pods-MonitorJakosciPowietrza2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorJakosciPowietrza2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorJakosciPowietrza2UITests/Pods-MonitorJakosciPowietrza2UITests.release.xcconfig"; sourceTree = "<group>"; };
+		81D77B556C786BF6B3BBE507 /* Pods_MonitorJakosciPowietrza2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorJakosciPowietrza2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A382F8DEFAA53A8FC7B6873A /* Pods_MonitorJakosciPowietrza2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorJakosciPowietrza2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35B3C04EBA9D0384351B83C /* Pods-MonitorJakosciPowietrza2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorJakosciPowietrza2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorJakosciPowietrza2Tests/Pods-MonitorJakosciPowietrza2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E42B56A35218D81BE69B70FF /* Pods-MonitorJakosciPowietrza2UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorJakosciPowietrza2UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorJakosciPowietrza2UITests/Pods-MonitorJakosciPowietrza2UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0DEEF06767884B95DBCEAC3 /* Pods-MonitorJakosciPowietrza2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonitorJakosciPowietrza2.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonitorJakosciPowietrza2/Pods-MonitorJakosciPowietrza2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F7EEF99230DBEA00041A320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB565E1ECB659D291C532252 /* Pods_MonitorJakosciPowietrza2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7EEFAD230DBEA60041A320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85360693AD218B51EB77BC2 /* Pods_MonitorJakosciPowietrza2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7EEFB8230DBEA60041A320 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BAE34EE93419A2EF5D7E93C /* Pods_MonitorJakosciPowietrza2UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6225B8B0D8E964E4877AE51F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A382F8DEFAA53A8FC7B6873A /* Pods_MonitorJakosciPowietrza2.framework */,
+				5359818063133AB6198E2A3B /* Pods_MonitorJakosciPowietrza2Tests.framework */,
+				81D77B556C786BF6B3BBE507 /* Pods_MonitorJakosciPowietrza2UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F0626A82312C5DE00BAF543 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6F0626A92312C5FF00BAF543 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6F7EEF93230DBEA00041A320 = {
+			isa = PBXGroup;
+			children = (
+				6F7EEF9E230DBEA00041A320 /* MonitorJakosciPowietrza2 */,
+				6F7EEFB3230DBEA60041A320 /* MonitorJakosciPowietrza2Tests */,
+				6F7EEFBE230DBEA60041A320 /* MonitorJakosciPowietrza2UITests */,
+				6F7EEF9D230DBEA00041A320 /* Products */,
+				F6361467EBE5E176CE469195 /* Pods */,
+				6225B8B0D8E964E4877AE51F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6F7EEF9D230DBEA00041A320 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEF9C230DBEA00041A320 /* MonitorJakosciPowietrza2.app */,
+				6F7EEFB0230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.xctest */,
+				6F7EEFBB230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F7EEF9E230DBEA00041A320 /* MonitorJakosciPowietrza2 */ = {
+			isa = PBXGroup;
+			children = (
+				6F0626A82312C5DE00BAF543 /* Extensions */,
+				6F7EEFD1230DC46F0041A320 /* App */,
+				6F7EEFD0230DC4650041A320 /* Networking */,
+				6F7EEFCF230DC45D0041A320 /* Models */,
+				6F7EEFCE230DC44F0041A320 /* Classes */,
+				6F7EEFCD230DC42C0041A320 /* Resources */,
+				6F7EEFA6230DBEA50041A320 /* Assets.xcassets */,
+				6F7EEFA8230DBEA50041A320 /* LaunchScreen.storyboard */,
+				6F7EEFAB230DBEA50041A320 /* Info.plist */,
+			);
+			path = MonitorJakosciPowietrza2;
+			sourceTree = "<group>";
+		};
+		6F7EEFB3230DBEA60041A320 /* MonitorJakosciPowietrza2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEFB4230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.swift */,
+				6F7EEFB6230DBEA60041A320 /* Info.plist */,
+			);
+			path = MonitorJakosciPowietrza2Tests;
+			sourceTree = "<group>";
+		};
+		6F7EEFBE230DBEA60041A320 /* MonitorJakosciPowietrza2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEFBF230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.swift */,
+				6F7EEFC1230DBEA60041A320 /* Info.plist */,
+			);
+			path = MonitorJakosciPowietrza2UITests;
+			sourceTree = "<group>";
+		};
+		6F7EEFCD230DC42C0041A320 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6F7EEFCE230DC44F0041A320 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEFD2230DC4CE0041A320 /* MeasureStation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6F7EEFCF230DC45D0041A320 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEFE0230DCD2C0041A320 /* MeasuringStation.swift */,
+				6F7EEFE2230DCD4A0041A320 /* MeasuringStand.swift */,
+				6F7EEFE4230DCD610041A320 /* MeasuringData.swift */,
+				6F7EEFE6230DCD840041A320 /* AirQualityIndex.swift */,
+				6F7EEFE8230DCDB00041A320 /* City.swift */,
+				6F7EEFEA230DCDC60041A320 /* Comune.swift */,
+				6F7EEFEC230DCDDF0041A320 /* MeasuringStandParam.swift */,
+				6F7EEFEE230DCE040041A320 /* MeasuringDataValue.swift */,
+				6F7EEFF0230DCE200041A320 /* IndexLevel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6F7EEFD0230DC4650041A320 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEFDC230DC7570041A320 /* MeasureStationsService.swift */,
+				6F7EEFDE230DC8F60041A320 /* Urls.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		6F7EEFD1230DC46F0041A320 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEF9F230DBEA00041A320 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6F7EEFD2230DC4CE0041A320 /* MeasureStation */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEFD5230DC4F10041A320 /* Views */,
+				6F7EEFA1230DBEA00041A320 /* MeasureStationsViewController.swift */,
+				6F7EEFD3230DC4EC0041A320 /* MeasureStationViewModel.swift */,
+			);
+			path = MeasureStation;
+			sourceTree = "<group>";
+		};
+		6F7EEFD5230DC4F10041A320 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6F7EEFD6230DC5370041A320 /* MeasureStationsView.storyboard */,
+				6F7EEFD8230DC6640041A320 /* MeasureStationTableViewCell.swift */,
+				6F7EEFD9230DC6640041A320 /* MeasureStationTableViewCell.xib */,
+				6FD2CFEA231481FB00F7BDB9 /* MeasureStationHeader.xib */,
+				6FD2CFEC2314833E00F7BDB9 /* MeasureStationHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F6361467EBE5E176CE469195 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E6FA06C29EE3C1E3681695E /* Pods-MonitorJakosciPowietrza2.debug.xcconfig */,
+				F0DEEF06767884B95DBCEAC3 /* Pods-MonitorJakosciPowietrza2.release.xcconfig */,
+				D35B3C04EBA9D0384351B83C /* Pods-MonitorJakosciPowietrza2Tests.debug.xcconfig */,
+				0632542FCF9E19E0F109FC40 /* Pods-MonitorJakosciPowietrza2Tests.release.xcconfig */,
+				E42B56A35218D81BE69B70FF /* Pods-MonitorJakosciPowietrza2UITests.debug.xcconfig */,
+				7BF4E8327AF2218673AD060E /* Pods-MonitorJakosciPowietrza2UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F7EEF9B230DBEA00041A320 /* MonitorJakosciPowietrza2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7EEFC4230DBEA60041A320 /* Build configuration list for PBXNativeTarget "MonitorJakosciPowietrza2" */;
+			buildPhases = (
+				122D34E9F0E9CE171B4DA202 /* [CP] Check Pods Manifest.lock */,
+				6F7EEF98230DBEA00041A320 /* Sources */,
+				6F7EEF99230DBEA00041A320 /* Frameworks */,
+				6F7EEF9A230DBEA00041A320 /* Resources */,
+				8917711DA08638A42FFE89B1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonitorJakosciPowietrza2;
+			productName = MonitorJakosciPowietrza2;
+			productReference = 6F7EEF9C230DBEA00041A320 /* MonitorJakosciPowietrza2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F7EEFAF230DBEA60041A320 /* MonitorJakosciPowietrza2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7EEFC7230DBEA60041A320 /* Build configuration list for PBXNativeTarget "MonitorJakosciPowietrza2Tests" */;
+			buildPhases = (
+				8CFDB55235442ED1EC487C1A /* [CP] Check Pods Manifest.lock */,
+				6F7EEFAC230DBEA60041A320 /* Sources */,
+				6F7EEFAD230DBEA60041A320 /* Frameworks */,
+				6F7EEFAE230DBEA60041A320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F7EEFB2230DBEA60041A320 /* PBXTargetDependency */,
+			);
+			name = MonitorJakosciPowietrza2Tests;
+			productName = MonitorJakosciPowietrza2Tests;
+			productReference = 6F7EEFB0230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6F7EEFBA230DBEA60041A320 /* MonitorJakosciPowietrza2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F7EEFCA230DBEA60041A320 /* Build configuration list for PBXNativeTarget "MonitorJakosciPowietrza2UITests" */;
+			buildPhases = (
+				D80C5EABDDB155D63B0B2308 /* [CP] Check Pods Manifest.lock */,
+				6F7EEFB7230DBEA60041A320 /* Sources */,
+				6F7EEFB8230DBEA60041A320 /* Frameworks */,
+				6F7EEFB9230DBEA60041A320 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F7EEFBD230DBEA60041A320 /* PBXTargetDependency */,
+			);
+			name = MonitorJakosciPowietrza2UITests;
+			productName = MonitorJakosciPowietrza2UITests;
+			productReference = 6F7EEFBB230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F7EEF94230DBEA00041A320 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Ola;
+				TargetAttributes = {
+					6F7EEF9B230DBEA00041A320 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6F7EEFAF230DBEA60041A320 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6F7EEF9B230DBEA00041A320;
+					};
+					6F7EEFBA230DBEA60041A320 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6F7EEF9B230DBEA00041A320;
+					};
+				};
+			};
+			buildConfigurationList = 6F7EEF97230DBEA00041A320 /* Build configuration list for PBXProject "MonitorJakosciPowietrza2" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F7EEF93230DBEA00041A320;
+			productRefGroup = 6F7EEF9D230DBEA00041A320 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F7EEF9B230DBEA00041A320 /* MonitorJakosciPowietrza2 */,
+				6F7EEFAF230DBEA60041A320 /* MonitorJakosciPowietrza2Tests */,
+				6F7EEFBA230DBEA60041A320 /* MonitorJakosciPowietrza2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F7EEF9A230DBEA00041A320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7EEFAA230DBEA50041A320 /* LaunchScreen.storyboard in Resources */,
+				6FD2CFEB231481FB00F7BDB9 /* MeasureStationHeader.xib in Resources */,
+				6F7EEFA7230DBEA50041A320 /* Assets.xcassets in Resources */,
+				6F7EEFD7230DC5370041A320 /* MeasureStationsView.storyboard in Resources */,
+				6F7EEFDB230DC6640041A320 /* MeasureStationTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7EEFAE230DBEA60041A320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7EEFB9230DBEA60041A320 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		122D34E9F0E9CE171B4DA202 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonitorJakosciPowietrza2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8917711DA08638A42FFE89B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MonitorJakosciPowietrza2/Pods-MonitorJakosciPowietrza2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonitorJakosciPowietrza2/Pods-MonitorJakosciPowietrza2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8CFDB55235442ED1EC487C1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonitorJakosciPowietrza2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D80C5EABDDB155D63B0B2308 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MonitorJakosciPowietrza2UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F7EEF98230DBEA00041A320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7EEFA2230DBEA00041A320 /* MeasureStationsViewController.swift in Sources */,
+				6F7EEFEF230DCE040041A320 /* MeasuringDataValue.swift in Sources */,
+				6F7EEFDA230DC6640041A320 /* MeasureStationTableViewCell.swift in Sources */,
+				6F7EEFEB230DCDC60041A320 /* Comune.swift in Sources */,
+				6F7EEFDD230DC7570041A320 /* MeasureStationsService.swift in Sources */,
+				6F7EEFDF230DC8F60041A320 /* Urls.swift in Sources */,
+				6F7EEFE3230DCD4A0041A320 /* MeasuringStand.swift in Sources */,
+				6F7EEFE5230DCD610041A320 /* MeasuringData.swift in Sources */,
+				6F0626AA2312C5FF00BAF543 /* StringExtensions.swift in Sources */,
+				6F7EEFD4230DC4EC0041A320 /* MeasureStationViewModel.swift in Sources */,
+				6F7EEFE9230DCDB00041A320 /* City.swift in Sources */,
+				6F7EEFED230DCDDF0041A320 /* MeasuringStandParam.swift in Sources */,
+				6F7EEFF1230DCE200041A320 /* IndexLevel.swift in Sources */,
+				6F7EEFA0230DBEA00041A320 /* AppDelegate.swift in Sources */,
+				6F7EEFE1230DCD2C0041A320 /* MeasuringStation.swift in Sources */,
+				6F7EEFE7230DCD840041A320 /* AirQualityIndex.swift in Sources */,
+				6FD2CFED2314833E00F7BDB9 /* MeasureStationHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7EEFAC230DBEA60041A320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7EEFB5230DBEA60041A320 /* MonitorJakosciPowietrza2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F7EEFB7230DBEA60041A320 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F7EEFC0230DBEA60041A320 /* MonitorJakosciPowietrza2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F7EEFB2230DBEA60041A320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F7EEF9B230DBEA00041A320 /* MonitorJakosciPowietrza2 */;
+			targetProxy = 6F7EEFB1230DBEA60041A320 /* PBXContainerItemProxy */;
+		};
+		6F7EEFBD230DBEA60041A320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F7EEF9B230DBEA00041A320 /* MonitorJakosciPowietrza2 */;
+			targetProxy = 6F7EEFBC230DBEA60041A320 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6F7EEFA8230DBEA50041A320 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F7EEFA9230DBEA50041A320 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6F7EEFC2230DBEA60041A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F7EEFC3230DBEA60041A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F7EEFC5230DBEA60041A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6FA06C29EE3C1E3681695E /* Pods-MonitorJakosciPowietrza2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD53699EVQ;
+				INFOPLIST_FILE = MonitorJakosciPowietrza2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Olcia.MonitorJakosciPowietrza2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F7EEFC6230DBEA60041A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0DEEF06767884B95DBCEAC3 /* Pods-MonitorJakosciPowietrza2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD53699EVQ;
+				INFOPLIST_FILE = MonitorJakosciPowietrza2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Olcia.MonitorJakosciPowietrza2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F7EEFC8230DBEA60041A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D35B3C04EBA9D0384351B83C /* Pods-MonitorJakosciPowietrza2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD53699EVQ;
+				INFOPLIST_FILE = MonitorJakosciPowietrza2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Olcia.MonitorJakosciPowietrza2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonitorJakosciPowietrza2.app/MonitorJakosciPowietrza2";
+			};
+			name = Debug;
+		};
+		6F7EEFC9230DBEA60041A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0632542FCF9E19E0F109FC40 /* Pods-MonitorJakosciPowietrza2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD53699EVQ;
+				INFOPLIST_FILE = MonitorJakosciPowietrza2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Olcia.MonitorJakosciPowietrza2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MonitorJakosciPowietrza2.app/MonitorJakosciPowietrza2";
+			};
+			name = Release;
+		};
+		6F7EEFCB230DBEA60041A320 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E42B56A35218D81BE69B70FF /* Pods-MonitorJakosciPowietrza2UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD53699EVQ;
+				INFOPLIST_FILE = MonitorJakosciPowietrza2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Olcia.MonitorJakosciPowietrza2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonitorJakosciPowietrza2;
+			};
+			name = Debug;
+		};
+		6F7EEFCC230DBEA60041A320 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BF4E8327AF2218673AD060E /* Pods-MonitorJakosciPowietrza2UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YD53699EVQ;
+				INFOPLIST_FILE = MonitorJakosciPowietrza2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Olcia.MonitorJakosciPowietrza2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MonitorJakosciPowietrza2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F7EEF97230DBEA00041A320 /* Build configuration list for PBXProject "MonitorJakosciPowietrza2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7EEFC2230DBEA60041A320 /* Debug */,
+				6F7EEFC3230DBEA60041A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F7EEFC4230DBEA60041A320 /* Build configuration list for PBXNativeTarget "MonitorJakosciPowietrza2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7EEFC5230DBEA60041A320 /* Debug */,
+				6F7EEFC6230DBEA60041A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F7EEFC7230DBEA60041A320 /* Build configuration list for PBXNativeTarget "MonitorJakosciPowietrza2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7EEFC8230DBEA60041A320 /* Debug */,
+				6F7EEFC9230DBEA60041A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F7EEFCA230DBEA60041A320 /* Build configuration list for PBXNativeTarget "MonitorJakosciPowietrza2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F7EEFCB230DBEA60041A320 /* Debug */,
+				6F7EEFCC230DBEA60041A320 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6F7EEF94230DBEA00041A320 /* Project object */;
+}

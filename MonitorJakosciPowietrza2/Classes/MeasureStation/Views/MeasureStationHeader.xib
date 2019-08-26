@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="TableViewHeaderView" id="4Wh-xk-eYl" customClass="MeasureStationHeader" customModule="MonitorJakosciPowietrza2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W8X-wb-44B">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foc-Re-Zsm">
+                            <rect key="frame" x="10" y="45" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="foc-Re-Zsm" firstAttribute="centerY" secondItem="W8X-wb-44B" secondAttribute="centerY" id="hVL-lw-h7j"/>
+                        <constraint firstItem="foc-Re-Zsm" firstAttribute="leading" secondItem="W8X-wb-44B" secondAttribute="leading" constant="10" id="oVQ-Gs-xjl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="W8X-wb-44B" firstAttribute="top" secondItem="ez5-dK-Yzr" secondAttribute="top" id="2bi-ZX-tKg"/>
+                <constraint firstItem="W8X-wb-44B" firstAttribute="leading" secondItem="ez5-dK-Yzr" secondAttribute="leading" id="Qsu-26-9V9"/>
+                <constraint firstItem="ez5-dK-Yzr" firstAttribute="bottom" secondItem="W8X-wb-44B" secondAttribute="bottom" id="cTF-EE-LRx"/>
+                <constraint firstItem="ez5-dK-Yzr" firstAttribute="trailing" secondItem="W8X-wb-44B" secondAttribute="trailing" id="sEr-4w-6ed"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="ez5-dK-Yzr"/>
+            <connections>
+                <outlet property="titleLabel" destination="foc-Re-Zsm" id="QAL-2i-v04"/>
+                <outlet property="topView" destination="W8X-wb-44B" id="6xs-py-07P"/>
+            </connections>
+            <point key="canvasLocation" x="39.200000000000003" y="46.776611694152926"/>
+        </view>
+    </objects>
+</document>
