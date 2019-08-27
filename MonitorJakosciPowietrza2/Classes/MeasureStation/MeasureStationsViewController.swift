@@ -105,18 +105,18 @@ class MeasureStationsViewController: UIViewController {
         tableView.rx
             .modelSelected(MeasuringStation.self)
             .subscribe({ (station) in
+                if let index = self.tableView.indexPathForSelectedRow{
+                    self.tableView.deselectRow(at: index, animated: true)
+                }
                 self.measureStationsViewModel?.selectedStation = station.element
                 self.measureStationsViewModel?.router.route(to: MeasureStationsRoutes.measureStationsData.rawValue, from: self, modally: false, animated: true)
             })
             .disposed(by: disposeBag)
-
     }
 
 }
 
 extension MeasureStationsViewController : UITableViewDelegate {
-    
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "MeasureStationHeader") as? MeasureStationHeader else {
             return UIView()

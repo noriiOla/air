@@ -49,13 +49,13 @@ class MeasureStationViewModel {
         self.isLoading = true
         DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
             self.measureStationServiec.getMeasureStations { (stations, error) in
+                self.isLoading = false
+                
                 if let error = error {
                     self.error = error
-                    self.isLoading = false
                     return
                 }
                 self.error = nil
-                self.isLoading = false
                 guard let stations = stations else {
                     self.error = "Something went wrong"
                     return
