@@ -12,22 +12,46 @@ import RxSwift
 import RxDataSources
 
 class MeasureStationsViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     var measureStationsViewModel: MeasureStationViewModel?
     let disposeBag = DisposeBag()
     var dataSource: RxTableViewSectionedReloadDataSource<MeasureStationSection>?
     
+    private let refreshControl = UIRefreshControl()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.backgroundColor = UIColor.clear
         
-        tableView.register(UINib(nibName: "MeasureStationHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "MeasureStationHeader")
-
-        tableView.register(MeasureStationTableViewCell.self, forCellReuseIdentifier: "MeasureStationTableViewCell")
-
         self.measureStationsViewModel = MeasureStationViewModel()
+        
+        setupRefreshControl()
+        setupUI()
+        setupTableView()
+        setupDataSource()
+        bindItems()
+        measureStationsViewModel?.fetchData()
+    }
+    
+    func setupTableView() {
+        self.tableView.backgroundColor = UIColor.clear
 
+        tableView.register(UINib(nibName: "MeasureStationHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "MeasureStationHeader")
+        
+        tableView.register(MeasureStationTableViewCell.self, forCellReuseIdentifier: "MeasureStationTableViewCell")
+        tableView.insertSubview(refreshControl, at: 0)
+
+    }
+    
+    func setupUI() {
+        
+    }
+    
+    func setupRefreshControl() {
+        refreshControl.sendActions(for: .valueChanged)
+    }
+    
+    func setupDataSource() {
         self.dataSource = RxTableViewSectionedReloadDataSource<MeasureStationSection>(
             configureCell: { dataSource, tableView, indexPath, item in
                 guard let cell = tableView.dequeueReusableCell(withIdentifier: "MeasureStationTableViewCell", for: indexPath) as? MeasureStationTableViewCell else {
@@ -40,8 +64,6 @@ class MeasureStationsViewController: UIViewController {
                 return cell
         })
         
-        
-            
         self.dataSource?.titleForHeaderInSection = { dataSource, index in
             return ""//dataSource.sectionModels[index].header
         }
@@ -53,11 +75,7 @@ class MeasureStationsViewController: UIViewController {
         self.dataSource?.canMoveRowAtIndexPath = { dataSource, indexPath in
             return true
         }
-        
-        self.bindItems()
-        self.measureStationsViewModel?.fetchData()
     }
-    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -68,13 +86,30 @@ class MeasureStationsViewController: UIViewController {
             return
         }
         
+        
         measureStationsViewModel?.stations
+            .do(onNext: {[weak self] _ in self?.refreshControl.endRefreshing() })
             .bind(to: tableView.rx.items(dataSource: dataSource!))
             .disposed(by: disposeBag)
-        
+
         tableView.rx
             .setDelegate(self)
             .disposed(by: disposeBag)
+        
+        refreshControl.rx.controlEvent(.valueChanged)
+            .bind {
+                self.measureStationsViewModel?.fetchData()
+            }
+            .disposed(by: disposeBag)
+        
+        tableView.rx
+            .modelSelected(MeasuringStation.self)
+            .subscribe({ (station) in
+                self.measureStationsViewModel?.selectedStation = station.element
+                self.measureStationsViewModel?.router.route(to: MeasureStationsRoutes.measureStationsData.rawValue, from: self, modally: false, animated: true)
+            })
+            .disposed(by: disposeBag)
+
     }
 
 }

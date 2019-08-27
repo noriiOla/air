@@ -32,15 +32,20 @@ class MeasureStationViewModel {
     let measureStationServiec: MeasureStationsService!
     var isLoading: Bool
     var error: String?
-    
+    var selectedStation: MeasuringStation?
+    var router: MeasureStationsRouter
+
     init(measuringStationService: MeasureStationsService = MeasureStationsService()) {
         self.measureStationServiec = measuringStationService
         isLoading = false
+        self.router = MeasureStationsRouter()
+        self.router.viewModel = self
     }
     
     
     func fetchData() {
-
+        
+        print("fetch data")
         self.isLoading = true
         DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
             self.measureStationServiec.getMeasureStations { (stations, error) in

@@ -8,7 +8,7 @@ target 'MonitorJakosciPowietrza2' do
     pod 'Kingfisher', '~> 4.0'
     pod 'SnapKit', '~> 4.0'
     pod 'RxDataSources', '~> 3.1'
-
+    pod 'R.swift'
     use_frameworks!
 
   # Pods for MonitorJakosciPowietrza2
